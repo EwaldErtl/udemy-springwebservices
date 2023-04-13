@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+
+  mysql:
+    image: mysql:8-oracle 
+    ports:
+      - "3306:3306"
+    hostname: mysql
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql
+      MYSQL_USER: social-media-user
+      MYSQL_PASSWORD: mysql
+      MYSQL_DATABASE: social-media-database
+
